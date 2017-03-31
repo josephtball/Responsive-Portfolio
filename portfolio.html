@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
 		<title>Joseph Ball</title>
 		<link rel="stylesheet" href="assets/css/reset.css">
 		<link rel="stylesheet" href="assets/css/style.css">
@@ -18,11 +19,11 @@
 <!-- nav elements -->
 				<div>
 					<ul>
-						<li><a href="index.html">About</a></li>
+						<li class="expand"><a href="index.html">About</a></li>
 						<li>|</li>
-						<li><a href="portfolio.html">Portfolio</a></li>
+						<li class="expand"><a href="portfolio.html">Portfolio</a></li>
 						<li>|</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li class="expand"><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -31,51 +32,53 @@
 		<main>
 			<div class="container">
 <!-- main content -->
-				<div class="content">
-					<section class="heading">
-						<h1>Portfolio</h1>
-					</section>
-					<section class="portfolio">
+				<div class="mobilecontainer">
+					<div class="content">
+						<section class="heading">
+							<h1>Portfolio</h1>
+						</section>
+						<section class="portfolio">
 <!-- list of images -->
-						<ul class="images">
-							<li><img src="assets/images/hangman.jpg" alt="Hangman" width="280" height="200"></li>
-							<li><img src="assets/images/rpggame.jpg" alt="RPG Game" width="280" height="200"></li>
-							<li><img src="assets/images/triviagame.jpg" alt="Trivia Game" width="280" height="200"></li>
-							<li><img src="assets/images/rutgersinfowidget.jpg" alt="Rutgers Info Widget" width="280" height="200"></li>
-							<li><img src="assets/images/rockpaperscissors.jpg" alt="Rock Paper Scissors" width="280" height="200"></li>
-						</ul>
+							<ul class="images">
+								<li><img src="assets/images/hangman.jpg" alt="Hangman" ></li>
+								<li><img src="assets/images/rpggame.jpg" alt="RPG Game" width="280" height="200"></li>
+								<li><img src="assets/images/triviagame.jpg" alt="Trivia Game" width="280" height="200"></li>
+								<li><img src="assets/images/rutgersinfowidget.jpg" alt="Rutgers Info Widget" width="280" height="200"></li>
+								<li><img src="assets/images/rockpaperscissors.jpg" alt="Rock Paper Scissors" width="280" height="200"></li>
+							</ul>
 <!-- list of labels to show over images using positioning -->
-						<ul class="labels">
-							<li>Hangman</li>
-							<li>RPG Game</li>
-							<li>Trivia Game</li>
-							<li>Rutgers Info Widget</li>
-							<li>Rock Paper Scissors</li>
-						</ul>
+							<ul class="labels">
+								<li><div class="center">Hangman</div></li>
+								<li><div class="center">RPG Game</div></li>
+								<li><div class="center">Trivia Game</div></li>
+								<li><div class="center">Rutgers Info Widget</div></li>
+								<li><div class="center">Rock Paper Scissors</div></li>
+							</ul>
 <!-- list of anchors to show over images and labels using positioning (makes entire image clickable) -->
-						<ul class="anchors">
-							<li><a href="#" class="spacing" target="_blank"></a></li>
-							<li><a href="#" class="spacing" target="_blank"></a></li>
-							<li><a href="#" class="spacing" target="_blank"></a></li>
-							<li><a href="#" class="spacing" target="_blank"></a></li>
-							<li><a href="#"></a></li>
-						</ul>
-					</section>
-				</div>
+							<ul class="anchors">
+								<li><a href="#" class="spacing" target="_blank"></a></li>
+								<li><a href="#" class="spacing" target="_blank"></a></li>
+								<li><a href="#" class="spacing" target="_blank"></a></li>
+								<li><a href="#" class="spacing" target="_blank"></a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</section>
+					</div>
 <!-- sidebar -->
-				<aside>
-					<section  class="asideheading">
-						<h3>Connect with Me</h3>
-					</section>
+					<aside>
+						<section  class="asideheading">
+							<h3>Connect with Me</h3>
+						</section>
 <!-- social links -->
-					<section>
-						<ul>
-							<li><a href="https://github.com/josephtball" target="_blank"><img src="assets/images/githubicon.png" alt="GitHub Icon" width="60" height="60"></a></li>
-							<li><a href="https://www.linkedin.com/in/joseph-ball-25055b138" target="_blank"><img src="assets/images/linkedinicon.png" alt="Linkedin Icon" width="60" height="60"></a></li>
-							<li><a href="https://stackoverflow.com/users/7700432/jball?tab=profile" target="_blank"><img src="assets/images/stackoverflowicon.png" alt="Stack Overflow Icon" width="60" height="60"></a></li>
-						</ul>
-					</section>
-				</aside>
+						<section>
+							<ul>
+								<li><a href="https://github.com/josephtball" target="_blank"><img src="assets/images/githubicon.png" alt="GitHub Icon" width="60" height="60"></a></li>
+								<li><a href="https://www.linkedin.com/in/joseph-ball-25055b138" target="_blank"><img src="assets/images/linkedinicon.png" alt="Linkedin Icon" width="60" height="60"></a></li>
+								<li><a href="https://stackoverflow.com/users/7700432/jball?tab=profile" target="_blank"><img src="assets/images/stackoverflowicon.png" alt="Stack Overflow Icon" width="60" height="60"></a></li>
+							</ul>
+						</section>
+					</aside>
+				</div>
 			</div>
 		</main>
 <!-- footer -->

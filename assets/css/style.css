@@ -11,8 +11,7 @@ body {
 }
 .container {
 	width: 960px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0px auto;
 }
 nav {
 	overflow: auto;
@@ -68,7 +67,7 @@ aside {
 }
 h1 {
 	font-size: 27px;
-	font-weight: 700;
+	font-weight: bold;
 }
 .heading {
 	color: #4aaaa5;
@@ -124,7 +123,6 @@ p:last-of-type {
 	width: 280px;
 	height: 50px;
 	margin: 140px 0px 63px;
-	background-color: #4aaaa5;
 	line-height: 50px;
 	text-align: center;
 	color: #ffffff;
@@ -136,6 +134,9 @@ p:last-of-type {
 }
 .labels li:nth-of-type(odd) {
 	margin-right: 33px;
+}
+.center {
+	background-color: #4aaaa5;
 }
 .anchors {
 	position: absolute;
@@ -157,13 +158,13 @@ p:last-of-type {
 	margin-right: 33px;
 }
 input {
-	width: 598px;
+	width: 100%;
 	margin-top: 4px;
 	margin-bottom: 14px;
 	padding: 6px;
 }
 textarea {
-	width: 598px;
+	width: 100%;
 	height: 180px;
 	margin-top: 4px;
 	margin-bottom: 14px;
@@ -185,7 +186,7 @@ button:active {
 	color: #4aaaa5;
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	font-size: 20px;
-	font-weight: 700;
+	font-weight: bold;
 	border-bottom: 1px solid #dddddd;
 	padding-bottom: 15px;
 	margin-bottom: 15px;
@@ -214,6 +215,7 @@ footer {
 h6 {
 	font-size: 11px;
 }
+
 /* sticky footer */
 html {
 	height: 100%;
@@ -226,3 +228,143 @@ body {
 main {
 	flex: 1;
 }
+
+@media only screen and (max-width:980px) {
+
+	.container {
+		width: 730px;
+	}
+	.content {
+		width: 420px;
+	}
+	.profileimage {
+		float: none;
+		margin: 0px 0px 10px 84px;
+	}
+	p {
+		font-weight: bold;
+	}
+	a {
+		font-weight: bold;
+	}
+	.images li {
+		width: 100%;
+		text-align: center;
+	}
+	.images li:nth-of-type(odd) {
+		margin-right: 0px;
+	}
+	.labels li {
+		width: 100%;	
+	}
+	.labels li:nth-of-type(odd) {
+		margin-right: 0px;
+	}
+	.center {
+		width: 280px;
+		margin: 0px auto;
+	}
+	.anchors a {
+		margin: 0px auto;
+	}
+	.anchors li {
+		width: 100%;
+	}
+	.anchors li:nth-of-type(odd) {
+		margin-right: 0px;
+	}
+
+} /* end media max-width:980px */
+
+@media only screen and (max-width:768px) {
+
+	html {
+		min-width: 620px;
+	}
+	.container {
+		width: 620px;
+	}
+	.content {
+		float: none;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.profileimage {
+		float: left;
+		margin-top: 8px;
+		margin-right: 20px;
+		margin-left: 0px;
+	}
+	aside {
+		width: 100%;
+		float: none;
+	}
+	.images li {
+		width: 280px;
+	}
+	.images li:nth-of-type(odd) {
+		margin-right: 3px;
+	}
+	.labels li {
+		width: 280px;
+	}
+	.labels li:nth-of-type(odd) {
+		margin-right: 3px;
+	}
+	.anchors li {
+		width: 280px;
+	}
+	.anchors li:nth-of-type(odd) {
+		margin-right: 3px;
+	}
+
+} /* end media max-width:768px */
+
+@media only screen and (max-width:640px) {
+
+	html {
+		min-width: 300px;
+	}
+	.container {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		text-align: center;
+	}
+	nav ul {
+		float: none;
+		display: flex;
+	}
+	.expand {
+		flex: 1;
+		text-align: center;
+	}
+	.mobile {
+		display: flex;
+		justify-content: center;
+	}
+	.mobilecontainer {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.images li {
+		width: 100%;
+	}
+	.images li:nth-of-type(odd) {
+		margin-right: 0px;
+	}
+	.labels li {
+		width: 100%;	
+	}
+	.labels li:nth-of-type(odd) {
+		margin-right: 0px;
+	}
+	.anchors li {
+		width: 100%;
+	}
+	.anchors li:nth-of-type(odd) {
+		margin-right: 0px;
+	}
+
+} /* end media max-width:640px */

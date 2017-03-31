@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
 		<title>Joseph Ball</title>
 		<link rel="stylesheet" href="assets/css/reset.css">
 		<link rel="stylesheet" href="assets/css/style.css">
@@ -18,11 +19,11 @@
 <!-- nav elements -->
 				<div>
 					<ul>
-						<li><a href="index.html">About</a></li>
+						<li class="expand"><a href="index.html">About</a></li>
 						<li>|</li>
-						<li><a href="portfolio.html">Portfolio</a></li>
+						<li class="expand"><a href="portfolio.html">Portfolio</a></li>
 						<li>|</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li class="expand"><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -31,36 +32,38 @@
 		<main>
 			<div class="container">
 <!-- main content -->
-				<div class="content">
-					<section class="heading">
-						<h1>Contact</h1>
-					</section>
-					<section>
-						<form name="contact" id="contact" method="post" action="#">
-							<label for="name">Name</label><br>
-								<input type="text" name="name" id="name" required="required" placeholder="John Smith"><br>
-							<label for="email">Email</label><br>
-								<input type="email" name="email" id="email" required="required" placeholder="example@gmail.com"><br>
-							<label for="message">Message</label><br>
-								<textarea name="message" id="message" required="required"></textarea><br>
-							<button type="submit" name="submit" id="submit">Submit</button>
-						</form>					
-					</section>
-				</div>
+				<div class="mobilecontainer">
+					<div class="content">
+						<section class="heading">
+							<h1>Contact</h1>
+						</section>
+						<section>
+							<form name="contact" id="contact" method="post" action="#">
+								<label for="name">Name</label><br>
+									<input type="text" name="name" id="name" required="required" placeholder="John Smith"><br>
+								<label for="email">Email</label><br>
+									<input type="email" name="email" id="email" required="required" placeholder="example@gmail.com"><br>
+								<label for="message">Message</label><br>
+									<textarea name="message" id="message" required="required"></textarea><br>
+								<button type="submit" name="submit" id="submit">Submit</button>
+							</form>					
+						</section>
+					</div>
 <!-- sidebar -->
-				<aside>
-					<section  class="asideheading">
-						<h3>Connect with Me</h3>
-					</section>
+					<aside>
+						<section  class="asideheading">
+							<h3>Connect with Me</h3>
+						</section>
 <!-- social links -->
-					<section>
-						<ul>
-							<li><a href="https://github.com/josephtball" target="_blank"><img src="assets/images/githubicon.png" alt="GitHub Icon" width="60" height="60"></a></li>
-							<li><a href="https://www.linkedin.com/in/joseph-ball-25055b138" target="_blank"><img src="assets/images/linkedinicon.png" alt="Linkedin Icon" width="60" height="60"></a></li>
-							<li><a href="https://stackoverflow.com/users/7700432/jball?tab=profile" target="_blank"><img src="assets/images/stackoverflowicon.png" alt="Stack Overflow Icon" width="60" height="60"></a></li>
-						</ul>
-					</section>
-				</aside>
+						<section>
+							<ul>
+								<li><a href="https://github.com/josephtball" target="_blank"><img src="assets/images/githubicon.png" alt="GitHub Icon" width="60" height="60"></a></li>
+								<li><a href="https://www.linkedin.com/in/joseph-ball-25055b138" target="_blank"><img src="assets/images/linkedinicon.png" alt="Linkedin Icon" width="60" height="60"></a></li>
+								<li><a href="https://stackoverflow.com/users/7700432/jball?tab=profile" target="_blank"><img src="assets/images/stackoverflowicon.png" alt="Stack Overflow Icon" width="60" height="60"></a></li>
+							</ul>
+						</section>
+					</aside>
+				</div>
 			</div>
 		</main>
 <!-- footer -->
