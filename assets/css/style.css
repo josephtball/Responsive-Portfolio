@@ -229,6 +229,20 @@ main {
 	flex: 1;
 }
 
+/* animation for social links */
+
+.rotate {
+	animation-name: rotate;
+	animation-duration: 2s;
+}
+
+@keyframes rotate {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+/* media queries */
+
 @media only screen and (max-width:980px) {
 
 	.container {
