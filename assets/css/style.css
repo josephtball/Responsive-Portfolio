@@ -114,6 +114,9 @@ p:last-of-type {
 .images li:nth-of-type(odd) {
 	margin-right: 33px;
 }
+.images li img {
+	border: 2px solid #4aaaa5;
+}
 .labels {
 	position: absolute;
 	top: 0;
